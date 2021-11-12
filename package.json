@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "noto-emoji-yellow-blobs resurrection ritual.",
   "scripts": {
+    "watch": "webpack --watch",
     "build": "npm i && webpack --progress --hide-modules"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@fonticonpicker/fonticonpicker": "^3.1.1",
+    "jquery": "^3.6.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",

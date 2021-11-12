@@ -1,5 +1,11 @@
 @import "variables";
 
+@import "~@fonticonpicker/fonticonpicker/dist/css/base/jquery.fonticonpicker.min.css";
+@import "~@fonticonpicker/fonticonpicker/dist/css/themes/grey-theme/jquery.fonticonpicker.grey.min.css";
+.icons-selector * {
+  font-family: inherit;
+}
+
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
