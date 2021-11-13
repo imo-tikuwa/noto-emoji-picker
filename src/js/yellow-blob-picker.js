@@ -1,7 +1,4 @@
-/*global window,require */
-import jQuery from 'jquery';
-window.$ = jQuery;
-
+/*global require */
 import '@fonticonpicker/fonticonpicker/dist/js/jquery.fonticonpicker.min';
 
 (function($){

@@ -13,6 +13,11 @@ module.exports = [
             path: path.resolve(__dirname, 'dist/js'),
             filename: 'yellow-blob-picker.js'
         },
+        externals: [
+            {
+                jquery: 'jQuery',
+            }
+        ],
         module: {
             rules: [
                 {
