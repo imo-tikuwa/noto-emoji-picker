@@ -5,6 +5,9 @@
 .icons-selector * {
   font-family: inherit;
 }
+.icons-selector .selector-search i {
+  top: -2px !important;
+}
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
