@@ -1,14 +1,21 @@
 {
-  "name": "webroot",
+  "name": "yellow-blob-picker",
+  "title": "Noto-Emoji's yellow blob picker plugin",
   "version": "1.0.0",
-  "description": "noto-emoji-yellow-blobs resurrection ritual.",
+  "description": "This is a jquery plugin that uses Yellow blob, which was used in Android 5 and 7, as an icon picker.",
   "scripts": {
     "convert_selection_json": "node src/js/selection-json-converter.js",
     "watch": "webpack --watch",
     "build": "npm i && webpack --progress --hide-modules"
   },
-  "author": "",
+  "author": "imo-tikuwa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imo-tikuwa/yellow-blob-picker.git"
+  },
+  "homepage": "https://github.com/imo-tikuwa/yellow-blob-picker",
   "license": "MIT",
+  "main": "dist/js/jquery.yellow-blob-picker.js",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.16.0",
