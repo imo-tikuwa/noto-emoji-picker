@@ -1,4 +1,4 @@
-# noto-emoji-picker
+# yellow-blob-picker
 
 This is a jquery plugin that uses Yellow blob, which was used in Android 5 and 7, as an icon picker.
 
