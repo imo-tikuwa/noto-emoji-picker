@@ -4,19 +4,19 @@ window.$ = jQuery;
 
 import '@fonticonpicker/fonticonpicker/dist/js/jquery.fonticonpicker.min';
 
-window.__YELLOW_BLOB_ICONS_PATH_COUNT_MAP = require('../icomoon_json/converted_selection.json');
-
 (function($){
     "use strict";
+
+    const yellowBlobIconsPathCountMap = require('../icomoon_json/converted_selection.json');
 
     let methods = {
         init: function(options) {
             // @fonticonpicker/fonticonpickerの固定したいオプション
             let staticFontIconPickerSettings = {
-                source: Object.keys(window.__YELLOW_BLOB_ICONS_PATH_COUNT_MAP),
+                source: Object.keys(yellowBlobIconsPathCountMap),
                 iconGenerator: icon => {
                     let html = `<i class='${icon}'>`;
-                        for (let path = 1; path <= window.__YELLOW_BLOB_ICONS_PATH_COUNT_MAP[icon]; path++) {
+                        for (let path = 1; path <= yellowBlobIconsPathCountMap[icon]; path++) {
                             html += `<span class=\'path${path}\'></span>`;
                         }
                         html += '</i>';

@@ -11,29 +11,17 @@
 <body>
     <div class="clearfix mhl mtl pt1">
         <form method="POST" action="./demo_iconpicker.php">
-            <input type="text" id="icon-picker1" name="picker1" value="<?= htmlspecialchars($_POST['picker1'])?>" />
-            <input type="text" id="icon-picker2" name="picker2" value="<?= htmlspecialchars($_POST['picker2'])?>" />
+            <input type="text" id="icon-picker" name="picker1" value="<?= htmlspecialchars($_POST['picker1'])?>" />
             <button type="submit" class="btn">POST</button>
         </form>
     </div>
     <script type="text/javascript" src="js/yellow-blob-picker.js"></script>
     <script type="text/javascript">
         $(() => {
-            var picker1 = $('#icon-picker1').fontIconPicker({
-                source: Object.keys(window.__YELLOW_BLOB_ICONS_PATH_COUNT_MAP),
-                iconGenerator: icon => {
-                    let html = `<i class='${icon}'>`;
-                        for (let path = 1; path <= window.__YELLOW_BLOB_ICONS_PATH_COUNT_MAP[icon]; path++) {
-                            html += `<span class=\'path${path}\'></span>`;
-                        }
-                        html += '</i>';
-                    return html;
-                }
+            let picker = $('#icon-picker').yellowBlobPicker({
+                iconsPerPage: 30,
             });
-            console.log(picker1);
-
-            var picker2 = $('#icon-picker2').yellowBlobPicker();
-            console.log(picker2);
+            console.log(picker);
         });
     </script>
 </body>
