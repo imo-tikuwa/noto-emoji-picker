@@ -1,5 +1,7 @@
 # noto-emoji-picker
 
+これはAndroid5および7で採用されていた黄色スライムくんをアイコンピッカーとして使用するjqueryプラグインです 。
+
 ![yellowBlobPicker](image-for-github.png)
 
 ## 使い方
