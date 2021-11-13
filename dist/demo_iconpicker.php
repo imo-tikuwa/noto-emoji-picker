@@ -15,15 +15,35 @@
             <input type="text" id="icon-picker" name="picker1" value="<?= htmlspecialchars($_POST['picker1'])?>" />
             <button type="submit" class="btn">POST</button>
         </form>
+        <table>
+            <tr>
+                <td>64px</td>
+                <td>
+                    <div class="display-icon" style="font-size:64px"></div>
+                </td>
+                <td>32px</td>
+                <td>
+                    <div class="display-icon" style="font-size:32px"></div>
+                </td>
+                <td>16px</td>
+                <td>
+                    <div class="display-icon" style="font-size:16px"></div>
+                </td>
+            </tr>
+        </table>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.yellow-blob-picker.js"></script>
     <script type="text/javascript">
         $(() => {
-            let picker = $('#icon-picker').yellowBlobPicker({
+            let $picker = $('#icon-picker').yellowBlobPicker({
                 iconsPerPage: 30,
+                emptyIcon: false,
             });
-            console.log(picker);
+            $picker.on('change', e => {
+                $('.display-icon').html($.createYellowBlobIcon(e.target.value));
+            });
+            $('.display-icon').html($.createYellowBlobIcon($picker.val()));
         });
     </script>
 </body>

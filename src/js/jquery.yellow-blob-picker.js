@@ -12,12 +12,7 @@ import '@fonticonpicker/fonticonpicker/dist/js/jquery.fonticonpicker.min';
             let staticFontIconPickerSettings = {
                 source: Object.keys(yellowBlobIconsPathCountMap),
                 iconGenerator: icon => {
-                    let html = `<i class='${icon}'>`;
-                        for (let path = 1; path <= yellowBlobIconsPathCountMap[icon]; path++) {
-                            html += `<span class=\'path${path}\'></span>`;
-                        }
-                        html += '</i>';
-                    return html;
+                    return $.createYellowBlobIcon(icon);
                 }
             };
             this.fontIconPicker($.extend(options, staticFontIconPickerSettings));
@@ -34,4 +29,19 @@ import '@fonticonpicker/fonticonpicker/dist/js/jquery.fonticonpicker.min';
             $.error('Method ' +  method + ' does not exist on jQuery.yellowBlobPicker');
         }
     };
+
+    // アイコンのhtmlを作成する処理についてグローバルな呼び出しが行えるよう関数として追加
+    $.extend({
+        createYellowBlobIcon: icon => {
+            if (!(icon in yellowBlobIconsPathCountMap)) {
+                return null;
+            }
+            let html = `<i class='${icon}'>`;
+                for (let path = 1; path <= yellowBlobIconsPathCountMap[icon]; path++) {
+                    html += `<span class=\'path${path}\'></span>`;
+                }
+                html += '</i>';
+            return html;
+        }
+    });
 })(jQuery);
