@@ -24,7 +24,7 @@
 </script>
 ```
 
-### Display Icon.
+### About icon display outside the icon picker.
 You can display the yellow-blob icon outside the icon picker by using the `$.createYellowBlobIcon` function.
 ```javascript
 <script type="text/javascript">
