@@ -24,6 +24,38 @@
 </script>
 ```
 
+### Display Icon.
+You can display the yellow-blob icon outside the icon picker by using the `$.createYellowBlobIcon` function.
+```javascript
+<script type="text/javascript">
+  let icon = 'android5-u1f60a';
+  $('.display-icon').html($.createYellowBlobIcon(icon));
+</script>
+```
+
+### Example.
+Display the icon picker. And show the selected icon in the .display-icon element when the "change" event fires.
+```html
+<input type="text" id="icon-picker" name="picker1" />
+<div class="display-icon" style="font-size:64px"></div>
+<div class="display-icon" style="font-size:32px"></div>
+<div class="display-icon" style="font-size:16px"></div>
+```
+```javascript
+<script type="text/javascript">
+  $(() => {
+    let $picker = $('#icon-picker').yellowBlobPicker({
+      iconsPerPage: 30,
+      emptyIcon: false,
+    });
+    $picker.on('change', e => {
+      $('.display-icon').html($.createYellowBlobIcon(e.target.value));
+    });
+    $('.display-icon').html($.createYellowBlobIcon($picker.val()));
+  });
+</script>
+```
+
 ## Options
 The icon picker itself uses the [fontIconPicker](https://github.com/fontIconPicker/fontIconPicker) plugin.  
 Therefore, among the options of the fontIconPicker plugin, options other than "source" and "iconGenerator" can be used as they are.
