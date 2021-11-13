@@ -8,10 +8,10 @@ module.exports = [
     {
         mode: 'production',
         devtool: false,
-        entry: path.resolve(__dirname, "src/js/index.js"),
+        entry: path.resolve(__dirname, "src/js/yellow-blob-picker.js"),
         output: {
             path: path.resolve(__dirname, 'dist/js'),
-            filename: 'bundle.js'
+            filename: 'yellow-blob-picker.js'
         },
         module: {
             rules: [
@@ -37,13 +37,13 @@ module.exports = [
     {
         mode: 'production',
         devtool: false,
-        entry: path.resolve(__dirname, "src/scss/style.scss"),
+        entry: path.resolve(__dirname, "src/scss/yellow-blob-picker.scss"),
         output: {
             path: path.resolve(__dirname, 'dist/css')
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'style.css'
+                filename: 'yellow-blob-picker.css'
             }),
             new OptimizeCssAssetsPlugin({
                 cssProcessor: require('cssnano'),
