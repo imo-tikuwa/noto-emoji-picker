@@ -8,7 +8,9 @@
     "watch": "webpack --watch",
     "build": "npm i && webpack --progress --hide-modules"
   },
-  "author": "imo-tikuwa",
+  "author": {
+    "name": "imo-tikuwa"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/imo-tikuwa/yellow-blob-picker.git"
