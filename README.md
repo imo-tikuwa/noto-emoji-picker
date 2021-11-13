@@ -28,3 +28,6 @@
 The icon picker itself uses the [fontIconPicker](https://github.com/fontIconPicker/fontIconPicker) plugin.  
 Therefore, among the options of the fontIconPicker plugin, options other than "source" and "iconGenerator" can be used as they are.
 
+## Credits
+ - The [emoji](https://github.com/googlefonts/noto-emoji) embedded within the plugin is licensed under the Apache License 2.0.
+ - The [fontIconPicker](https://github.com/fontIconPicker/fontIconPicker) embedded within the plugin is licensed by MIT.
