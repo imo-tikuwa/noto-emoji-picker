@@ -4,6 +4,8 @@ This is a jquery plugin that uses Yellow blob, which was used in Android 5 and 7
 
 ![yellowBlobPicker](image-for-github.png)
 
+A list of [available icons](https://etc.imo-tikuwa.com/yellow-blob-picker/dist/demo.html) and a [demo](https://etc.imo-tikuwa.com/yellow-blob-picker/dist/demo_iconpicker.php) of the icon picker.
+
 ## Usage
 1. Load `jquery.yellow-blob-picker.css` in the head.
 ```html
