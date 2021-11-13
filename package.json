@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "noto-emoji-yellow-blobs resurrection ritual.",
   "scripts": {
-    "convert_selection_json": "node src/js/selection_json_converter.js",
+    "convert_selection_json": "node src/js/selection-json-converter.js",
     "watch": "webpack --watch",
     "build": "npm i && webpack --progress --hide-modules"
   },

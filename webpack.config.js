@@ -8,10 +8,10 @@ module.exports = [
     {
         mode: 'production',
         devtool: false,
-        entry: path.resolve(__dirname, "src/js/yellow-blob-picker.js"),
+        entry: path.resolve(__dirname, "src/js/jquery.yellow-blob-picker.js"),
         output: {
             path: path.resolve(__dirname, 'dist/js'),
-            filename: 'yellow-blob-picker.js'
+            filename: 'jquery.yellow-blob-picker.js'
         },
         externals: [
             {
@@ -42,13 +42,13 @@ module.exports = [
     {
         mode: 'production',
         devtool: false,
-        entry: path.resolve(__dirname, "src/scss/yellow-blob-picker.scss"),
+        entry: path.resolve(__dirname, "src/scss/jquery.yellow-blob-picker.scss"),
         output: {
             path: path.resolve(__dirname, 'dist/css')
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: 'yellow-blob-picker.css'
+                filename: 'jquery.yellow-blob-picker.css'
             }),
             new OptimizeCssAssetsPlugin({
                 cssProcessor: require('cssnano'),
