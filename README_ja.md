@@ -4,6 +4,8 @@
 
 ![yellowBlobPicker](image-for-github.png)
 
+使用可能な[アイコンのリスト](https://etc.imo-tikuwa.com/yellow-blob-picker/dist/demo.html)とアイコンピッカーの[デモ](https://etc.imo-tikuwa.com/yellow-blob-picker/dist/demo_iconpicker.php)ページ
+
 ## 使い方
 1. &lt;head&gt;内に`jquery.yellow-blob-picker.css`の読み込みを追加する。
 ```html
