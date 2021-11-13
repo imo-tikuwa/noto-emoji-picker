@@ -3,15 +3,25 @@
 ![yellowBlobPicker](image-for-github.png)
 
 ## Usage
-1. Load css and javascript.
+1. Load `yellow-blob-picker.css` in the head.
+```html
+<link rel="stylesheet" href="css/yellow-blob-picker.css">
 ```
-<link rel="stylesheet" href="css/yellow-blob-picker.css"></head>
+
+2. Load `yellow-blob-picker.js` after loading jquery.
+```html
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="js/yellow-blob-picker.js"></script>
 ```
 
-2. Call yellowBlobPicker()
+3. Call yellowBlobPicker()
+```html
+<input type="text" id="icon-picker" name="picker1" />
 ```
-$('#icon-picker').yellowBlobPicker();
+```javascript
+<script type="text/javascript">
+  $('#icon-picker').yellowBlobPicker();
+</script>
 ```
 
 ## Options
