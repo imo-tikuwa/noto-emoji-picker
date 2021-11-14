@@ -66,4 +66,5 @@ Therefore, among the options of the fontIconPicker plugin, options other than "s
 
 ## Credits
  - The [emoji](https://github.com/googlefonts/noto-emoji) embedded within the plugin is licensed under the Apache License 2.0.
+   - Of the svg files used as the source of the web font, the icon using linearGradient was replaced with a single color (#fcc21b) before use.
  - The [fontIconPicker](https://github.com/fontIconPicker/fontIconPicker) embedded within the plugin is licensed by MIT.
