@@ -66,4 +66,5 @@ fontIconPickerプラグインのオプションのうち、sourceとiconGenerato
 
 ## クレジット
  - プラグイン内で使用している[emoji](https://github.com/googlefonts/noto-emoji)は、Apache License2.0の下でライセンスされています。
+   - WebフォントのソースとしたsvgファイルのうちlinearGradientが使われているアイコンは単色(#fcc21b)に置き換えてから使用しました。
  - プラグイン内で使用している[fontIconPicker](https://github.com/fontIconPicker/fontIconPicker)は、MITの下でライセンスされています。
