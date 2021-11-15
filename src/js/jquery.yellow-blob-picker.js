@@ -4,13 +4,17 @@ import '@fonticonpicker/fonticonpicker/dist/js/jquery.fonticonpicker.min';
 (function($){
     "use strict";
 
-    const yellowBlobIconsPathCountMap = require('../icomoon_json/converted_selection.json');
+    const yellowBlobIconsPathCountMap = require('../icomoon_json/converted_selection.json'), source = {'Android5': [], 'Android7': []};
+    Object.keys(yellowBlobIconsPathCountMap).forEach(icon => {
+        let category = icon.startsWith('android5') ? 'Android5' : 'Android7';
+        source[category].push(icon);
+    });
 
     let methods = {
         init: function(options) {
             // @fonticonpicker/fonticonpickerの固定したいオプション
             let staticFontIconPickerSettings = {
-                source: Object.keys(yellowBlobIconsPathCountMap),
+                source,
                 iconGenerator: icon => {
                     return $.createYellowBlobIcon(icon);
                 }
